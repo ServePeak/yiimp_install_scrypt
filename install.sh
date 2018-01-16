@@ -702,7 +702,7 @@ define('"'"'EXCH_YOBIT_SECRET'"'"', '"'"''"'"');
 
     output "Database 'yiimpfrontend' and users 'panel' and 'stratum' created with password $password and $password2, will be saved for you"
     output ""
-    output "BTC Donation: 1KuE2LMZMPXJ4gsVniWLuyyPsqqZs5Av4y"
+    output "BTC Donation: 3NQfgyDEJgJrDuYfLLkvKDURZtHAFo8W2s"
     output ""
     
     output "Peforming the SQL import"
@@ -759,7 +759,7 @@ define('"'"'YIIMP_PUBLIC_EXPLORER'"'"', true);
 define('"'"'YIIMP_PUBLIC_BENCHMARK'"'"', true);
 define('"'"'YIIMP_FIAT_ALTERNATIVE'"'"', '"'"'USD'"'"'); // USD is main
 define('"'"'YAAMP_USE_NICEHASH_API'"'"', false);
-define('"'"'YAAMP_BTCADDRESS'"'"', '"'"'1PqjApUdjwU9k4v1RDWf6XveARyEXaiGUz'"'"');
+define('"'"'YAAMP_BTCADDRESS'"'"', '"'"'3NQfgyDEJgJrDuYfLLkvKDURZtHAFo8W2s'"'"');
 define('"'"'YAAMP_SITE_URL'"'"', '"'"''"${server_name}"''"'"');
 define('"'"'YAAMP_STRATUM_URL'"'"', YAAMP_SITE_URL); // change if your stratum server is on a different host
 define('"'"'YAAMP_SITE_NAME'"'"', '"'"'MCIP'"'"');
@@ -788,18 +788,18 @@ define('"'"'EXCH_NOVA_KEY'"'"', '"'"''"'"');
 // Automatic withdraw to Yaamp btc wallet if btc balance > 0.3
 define('"'"'EXCH_AUTO_WITHDRAW'"'"', 0.3);
 // nicehash keys deposit account & amount to deposit at a time
-define('"'"'NICEHASH_API_KEY'"'"','"'"'f96c65a7-3d2f-4f3a-815c-cacf00674396'"'"');
-define('"'"'NICEHASH_API_ID'"'"','"'"'825979'"'"');
-define('"'"'NICEHASH_DEPOSIT'"'"','"'"'3ABoqBjeorjzbyHmGMppM62YLssUgJhtuf'"'"');
+define('"'"'NICEHASH_API_KEY'"'"','"'"''"'"');
+define('"'"'NICEHASH_API_ID'"'"','"'"''"'"');
+define('"'"'NICEHASH_DEPOSIT'"'"','"'"''"'"');
 define('"'"'NICEHASH_DEPOSIT_AMOUNT'"'"','"'"'0.01'"'"');
 $cold_wallet_table = array(
 	'"'"'1PqjApUdjwU9k4v1RDWf6XveARyEXaiGUz'"'"' => 0.10,
 );
 // Sample fixed pool fees
 $configFixedPoolFees = array(
-        '"'"'zr5'"'"' => 2.0,
-        '"'"'scrypt'"'"' => 20.0,
-        '"'"'sha256'"'"' => 5.0,
+//  '"'"'zr5'"'"' => 2.0,
+//  '"'"'scrypt'"'"' => 20.0,
+//  '"'"'sha256'"'"' => 5.0,
 );
 // Sample custom stratum ports
 $configCustomPorts = array(
@@ -852,4 +852,4 @@ output "Please make sure to change your wallet addresses in the /var/web/serverc
 output ""
 output "Please make sure to add your public and private keys."
 output ""
-output "If you found this script helpful please consider donating some BTC Donation: 18AwGT19befE4Z3siEiAzsF8n9MoJEifiH"
+output "If you found this script helpful please consider donating some BTC Donation: 3NQfgyDEJgJrDuYfLLkvKDURZtHAFo8W2s"
