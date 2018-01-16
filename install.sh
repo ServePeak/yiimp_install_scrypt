@@ -1,8 +1,8 @@
 #!/bin/bash
 ################################################################################
 # Original Author:   crombiecrunch
-# Fork Author: manfromafar
-# Current Author: Xavatar
+# Fork Author: mario1987
+# Current Author: ServePeak/yiimp
 # Web:     
 #
 # Program:
@@ -37,7 +37,7 @@ output ""
     read -e -p "Install LetsEncrypt SSL? IMPORTANT! You MUST have your domain name pointed to this server prior to running the script!! [Y/n]: " ssl_install
     
      
-    output "If you found this helpful, please donate to BTC Donation: 18AwGT19befE4Z3siEiAzsF8n9MoJEifiH"
+    output "If you found this helpful, please donate to BTC Donation: 3NQfgyDEJgJrDuYfLLkvKDURZtHAFo8W2s"
     output ""
     output "Updating system and installing required packages."
     output ""
@@ -186,7 +186,7 @@ default         0;
     #Generating Random Password for stratum
     blckntifypass=`cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 32 | head -n 1`
     cd ~
-    git clone https://github.com/tpruvot/yiimp.git
+    git clone https://github.com/ServePeak/yiimp.git
     cd $HOME/yiimp/blocknotify
     sudo sed -i 's/tu8tu5/'$blckntifypass'/' blocknotify.cpp
     sudo make
